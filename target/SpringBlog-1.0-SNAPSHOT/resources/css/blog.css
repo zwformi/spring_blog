@@ -1,0 +1,63 @@
+body {
+    margin-top: 51px; /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
+    overflow: hidden;
+}
+#blog-back:hover{
+    cursor: pointer;
+}
+#blog-back .glyphicon-circle-arrow-left{
+    font-size: 30px;
+    color: #00aaee;
+}
+.footer {
+    color: #999;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+}
+.bloglist{
+    height:400px;
+}
+.blog-container-wrap-content{
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.scroll-content2::-webkit-scrollbar
+{
+    width: 8px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.scroll-content2::-webkit-scrollbar-track
+{
+    /*border-radius: 3px;*/
+    border-radius: 25px;
+    background-color: #333;
+}
+
+/*定义滑块 内阴影+圆角*/
+.scroll-content2::-webkit-scrollbar-thumb
+{
+    border-radius: 25px;
+    background-color: #ccc;
+}
+.blog-title-btn
+{
+    font-size: 24px;
+}
+.blog-menu-category-left{
+    background: red;
+}
+.blog-menu-category-left:hover{
+    cursor: pointer;
+}
+.blog-menu-category-right{
+    background: grey;
+}
+.blog-menu-category-right:hover{
+    cursor: pointer;
+}

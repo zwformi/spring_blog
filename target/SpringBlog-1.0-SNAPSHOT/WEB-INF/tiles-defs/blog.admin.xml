@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="blank.template" template="/WEB-INF/jsp/blank.jsp">
+    </definition>
+    <definition name="admin.login" template="/WEB-INF/jsp/login.jsp">
+    </definition>
+
+    <definition name="admin.index" template="/WEB-INF/jsp/admin-index.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/blog-header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/admin-menu.jsp" />
+    </definition>
+
+    <definition name="admin.home" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-welcome.jsp" />
+    </definition>
+    <definition name="admin.new" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-newpost.jsp" />
+    </definition>
+
+    <definition name="admin.posts" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-posts.jsp" />
+    </definition>
+    <definition name="admin.categories" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-categories.jsp" />
+    </definition>
+    <definition name="admin.comments" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-comments.jsp" />
+    </definition>
+
+    <definition name="admin.post" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-post.jsp" />
+    </definition>
+
+
+
+    <definition name="blog.index" template="/WEB-INF/jsp/blog-index.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/blog-header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/blog-menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/blog-footer.jsp" />
+    </definition>
+
+    <!--<definition name="blog.posts" extends="blank.template">-->
+        <!--<put-attribute name="content" value="/WEB-INF/jsp/blog-posts.jsp" />-->
+    <!--</definition>-->
+
+    <definition name="blog.post" extends="blank.template">
+        <put-attribute name="content" value="/WEB-INF/jsp/blog-post.jsp" />
+    </definition>
+
+
+
+</tiles-definitions>
